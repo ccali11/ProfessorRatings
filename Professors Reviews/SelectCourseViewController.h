@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SelectCourseViewController.h
 //  Professors Reviews
 //
 //  Created by Christopher Cali on 11/4/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SelectCourseViewController : UIViewController
 
 @end
-

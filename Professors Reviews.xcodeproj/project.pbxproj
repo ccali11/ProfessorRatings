@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		880C52211BEADC5300C765CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52201BEADC5300C765CA /* main.m */; };
 		880C52241BEADC5300C765CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52231BEADC5300C765CA /* AppDelegate.m */; };
-		880C52271BEADC5300C765CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52261BEADC5300C765CA /* ViewController.m */; };
 		880C522A1BEADC5300C765CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880C52281BEADC5300C765CA /* Main.storyboard */; };
 		880C522C1BEADC5300C765CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880C522B1BEADC5300C765CA /* Images.xcassets */; };
 		880C522F1BEADC5300C765CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880C522D1BEADC5300C765CA /* LaunchScreen.xib */; };
 		880C523B1BEADC5300C765CA /* Professors_ReviewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */; };
+		880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52451BEAE77C00C765CA /* SelectCourseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		880C52201BEADC5300C765CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		880C52221BEADC5300C765CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		880C52231BEADC5300C765CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		880C52251BEADC5300C765CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		880C52261BEADC5300C765CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		880C52291BEADC5300C765CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		880C522B1BEADC5300C765CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		880C522E1BEADC5300C765CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		880C52341BEADC5300C765CA /* Professors ReviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Professors ReviewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		880C52391BEADC5300C765CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Professors_ReviewsTests.m; sourceTree = "<group>"; };
+		880C52441BEAE77C00C765CA /* SelectCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCourseViewController.h; sourceTree = "<group>"; };
+		880C52451BEAE77C00C765CA /* SelectCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCourseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +81,9 @@
 		880C521D1BEADC5300C765CA /* Professors Reviews */ = {
 			isa = PBXGroup;
 			children = (
-				880C52221BEADC5300C765CA /* AppDelegate.h */,
-				880C52231BEADC5300C765CA /* AppDelegate.m */,
-				880C52251BEADC5300C765CA /* ViewController.h */,
-				880C52261BEADC5300C765CA /* ViewController.m */,
 				880C52281BEADC5300C765CA /* Main.storyboard */,
-				880C522B1BEADC5300C765CA /* Images.xcassets */,
-				880C522D1BEADC5300C765CA /* LaunchScreen.xib */,
+				880C52441BEAE77C00C765CA /* SelectCourseViewController.h */,
+				880C52451BEAE77C00C765CA /* SelectCourseViewController.m */,
 				880C521E1BEADC5300C765CA /* Supporting Files */,
 			);
 			path = "Professors Reviews";
@@ -96,6 +92,10 @@
 		880C521E1BEADC5300C765CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				880C522B1BEADC5300C765CA /* Images.xcassets */,
+				880C522D1BEADC5300C765CA /* LaunchScreen.xib */,
+				880C52221BEADC5300C765CA /* AppDelegate.h */,
+				880C52231BEADC5300C765CA /* AppDelegate.m */,
 				880C521F1BEADC5300C765CA /* Info.plist */,
 				880C52201BEADC5300C765CA /* main.m */,
 			);
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				880C52271BEADC5300C765CA /* ViewController.m in Sources */,
+				880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */,
 				880C52241BEADC5300C765CA /* AppDelegate.m in Sources */,
 				880C52211BEADC5300C765CA /* main.m in Sources */,
 			);
