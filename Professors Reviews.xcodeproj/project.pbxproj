@@ -412,6 +412,7 @@
 				880C52401BEADC5300C765CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		880C52411BEADC5300C765CA /* Build configuration list for PBXNativeTarget "Professors ReviewsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				880C52431BEADC5300C765CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
