@@ -14,6 +14,7 @@
 		880C522F1BEADC5300C765CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880C522D1BEADC5300C765CA /* LaunchScreen.xib */; };
 		880C523B1BEADC5300C765CA /* Professors_ReviewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */; };
 		880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52451BEAE77C00C765CA /* SelectCourseViewController.m */; };
+		88FEFE0F1BF792CF00A5B46C /* RateProfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Professors_ReviewsTests.m; sourceTree = "<group>"; };
 		880C52441BEAE77C00C765CA /* SelectCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCourseViewController.h; sourceTree = "<group>"; };
 		880C52451BEAE77C00C765CA /* SelectCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCourseViewController.m; sourceTree = "<group>"; };
+		88FEFE0D1BF792CF00A5B46C /* RateProfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateProfViewController.h; sourceTree = "<group>"; };
+		88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateProfViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				880C52281BEADC5300C765CA /* Main.storyboard */,
+				88FEFE0D1BF792CF00A5B46C /* RateProfViewController.h */,
+				88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */,
 				880C52441BEAE77C00C765CA /* SelectCourseViewController.h */,
 				880C52451BEAE77C00C765CA /* SelectCourseViewController.m */,
 				880C521E1BEADC5300C765CA /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */,
+				88FEFE0F1BF792CF00A5B46C /* RateProfViewController.m in Sources */,
 				880C52241BEADC5300C765CA /* AppDelegate.m in Sources */,
 				880C52211BEADC5300C765CA /* main.m in Sources */,
 			);
