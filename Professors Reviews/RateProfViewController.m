@@ -17,11 +17,21 @@
 @implementation RateProfViewController
 - (IBAction)buttonPressed:(UIButton *)sender {
     if ([sender.titleLabel.text isEqualToString: @"Back"]) {
-        self.tray.center = CGPointMake(self.tray.center.x + self.tray.frame.size.width/3, self.tray.center.y);
+        
+        [UIView animateWithDuration:0.75
+                         animations:^(void){
+                             self.tray.center = CGPointMake(self.tray.center.x + self.tray.frame.size.width/3, self.tray.center.y);
+                         }];
+        
     }
     
     else if ([sender.titleLabel.text isEqualToString:@"Next"]){
-        self.tray.center = CGPointMake(self.tray.center.x - self.tray.frame.size.width/3, self.tray.center.y);
+        
+        [UIView animateWithDuration:0.75
+                         animations:^(void){
+                            self.tray.center = CGPointMake(self.tray.center.x - self.tray.frame.size.width/3, self.tray.center.y);
+
+        }];
         
     }
 }
