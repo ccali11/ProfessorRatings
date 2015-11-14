@@ -57,6 +57,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"CourseList to Prof"
                               sender:self];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
