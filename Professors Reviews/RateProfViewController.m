@@ -25,25 +25,27 @@
 //This is the tray. Animate moving the tray 0.75s
 @implementation RateProfViewController
 
-//View Life Cycle Methods
+/* VIEW LIFECYCLE */
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad]; //always call super in view lifecyles methods
     self.questionCountTotal = 3;
     self.questionNumber = 1;
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [self updateInterface];
-    [super viewWillAppear:animated];
+    [super viewWillAppear:animated];//called super later so code happens before anything else is on the screen
 }
 
+/* ACTIONS */
+//to create this action, we control dragged from one button, then control dragged from the other (highlights entire method)
 - (IBAction)buttonPressed:(UIButton *)sender {
     if ([sender.titleLabel.text isEqualToString: @"Back"])
     
     {
         if (![self atLeftBound]) {
             [self animateBack];
-            self.questionNumber--;
+            self.questionNumber--;//the "--" is a decrement; this subtracts 1 and stores it
         }
         
     }
@@ -52,7 +54,7 @@
     {
         if (![self atRightBound]) {
             [self animateForward];
-            self.questionNumber++;
+            self.questionNumber++;//the "++" is a increment; this adds 1 and stores is
         }
        
     }
@@ -60,6 +62,7 @@
     [self updateInterface];
 }
 
+/* INTERFACE */
 - (void) animateForward {
     [UIView animateWithDuration:0.75
                      animations:^(void){
@@ -74,6 +77,35 @@
                      }];
 }
 
+//Higher Level Abstraction for interface - 11/29 contains navigationButtonEnablerDisabler and updateProgressView methods
+- (void) updateInterface {
+    [self navigationButtonEnablerDisabler];
+    [self updateProgressView];
+}
+
+- (void) navigationButtonEnablerDisabler {
+    
+    if ([self atLeftBound]) {
+        self.backButton.enabled = NO;
+    }
+    else {
+        self.backButton.enabled =YES;
+    }
+    
+    if ([self atRightBound]) {
+        self.nextButton.enabled = NO;
+    }
+    else {
+        self.nextButton.enabled = YES;
+    }
+    
+}
+
+- (void) updateProgressView {
+    self.progressBar.progress = (double)self.questionNumber/self.questionCountTotal;
+}
+
+/* VIEW LOGIC */
 - (BOOL) atLeftBound {
     
     if (self.questionNumber <= 1) {
@@ -95,32 +127,7 @@
     
 }
 
-- (void) navigationButtonEnablerDisabler {
-    
-    if ([self atLeftBound]) {
-        self.backButton.enabled = NO;
-    }
-    else {
-        self.backButton.enabled =YES;
-    }
-    
-    if ([self atRightBound]) {
-        self.nextButton.enabled = NO;
-    }
-    else {
-        self.nextButton.enabled = YES;
-    }
-    
-}
 
-- (void) updateInterface {
-    [self navigationButtonEnablerDisabler];
-    [self updateProgressView];
-}
-
-- (void) updateProgressView {
-    self.progressBar.progress = (double)self.questionNumber/self.questionCountTotal;
-}
 
 
 
