@@ -11,30 +11,42 @@
 @interface RateProfViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *tray;
+@property (nonatomic) int myint;
 
 @end
 
+//This is the tray. Animate moving the tray 0.75s
 @implementation RateProfViewController
 - (IBAction)buttonPressed:(UIButton *)sender {
     if ([sender.titleLabel.text isEqualToString: @"Back"]) {
-        
-        [UIView animateWithDuration:0.75
-                         animations:^(void){
-                             self.tray.center = CGPointMake(self.tray.center.x + self.tray.frame.size.width/3, self.tray.center.y);
-                         }];
+        [self animateRight];
         
     }
     
     else if ([sender.titleLabel.text isEqualToString:@"Next"]){
-        
-        [UIView animateWithDuration:0.75
-                         animations:^(void){
-                            self.tray.center = CGPointMake(self.tray.center.x - self.tray.frame.size.width/3, self.tray.center.y);
-
-        }];
-        
+        [self animateLeft];
     }
 }
+
+- (void) animateLeft {
+    [UIView animateWithDuration:0.75
+                     animations:^(void){
+                         self.tray.center = CGPointMake(self.tray.center.x - self.tray.frame.size.width/3, self.tray.center.y);
+                     }];
+}
+
+- (void) animateRight {
+    [UIView animateWithDuration:0.75
+                     animations:^(void){
+                         self.tray.center = CGPointMake(self.tray.center.x + self.tray.frame.size.width/3, self.tray.center.y);
+                     }];
+}
+
+//Question 1 label
+
+
+
+
 
 
 
