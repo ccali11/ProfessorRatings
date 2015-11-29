@@ -10,6 +10,10 @@
 
 @interface RateProfViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+
 @property (weak, nonatomic) IBOutlet UIView *tray;
 @property (nonatomic) int questionNumber;
 
@@ -27,6 +31,10 @@
     self.questionNumber = 1;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self navigationButtonEnablerDisabler];
+    [super viewWillAppear:animated];
+}
 
 - (IBAction)buttonPressed:(UIButton *)sender {
     if ([sender.titleLabel.text isEqualToString: @"Back"])
@@ -45,9 +53,10 @@
             [self animateForward];
             self.questionNumber++;
         }
+       
     }
     
-    
+    [self navigationButtonEnablerDisabler];
 }
 
 - (void) animateForward {
@@ -85,8 +94,23 @@
     
 }
 
-//Question 1 label
-
+- (void) navigationButtonEnablerDisabler {
+    
+    if ([self atLeftBound]) {
+        self.backButton.enabled = NO;
+    }
+    else {
+        self.backButton.enabled =YES;
+    }
+    
+    if ([self atRightBound]) {
+        self.nextButton.enabled = NO;
+    }
+    else {
+        self.nextButton.enabled = YES;
+    }
+    
+}
 
 
 
