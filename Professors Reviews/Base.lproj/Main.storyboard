@@ -201,7 +201,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yzw-Cg-mrC">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yzw-Cg-mrC">
                                 <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
                                 <animations/>
                             </progressView>
@@ -449,6 +449,7 @@
                     <connections>
                         <outlet property="backButton" destination="lMi-a2-74m" id="flQ-aF-86U"/>
                         <outlet property="nextButton" destination="jDU-Yj-D8E" id="xuT-97-n1d"/>
+                        <outlet property="progressBar" destination="yzw-Cg-mrC" id="6ax-3R-F6f"/>
                         <outlet property="tray" destination="q4M-JG-pey" id="DsS-Ks-9oN"/>
                     </connections>
                 </viewController>

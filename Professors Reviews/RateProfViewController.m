@@ -19,6 +19,7 @@
 
 @property (nonatomic) int questionCountTotal;
 
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 @end
 
 //This is the tray. Animate moving the tray 0.75s
@@ -32,7 +33,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self navigationButtonEnablerDisabler];
+    [self updateInterface];
     [super viewWillAppear:animated];
 }
 
@@ -56,7 +57,7 @@
        
     }
     
-    [self navigationButtonEnablerDisabler];
+    [self updateInterface];
 }
 
 - (void) animateForward {
@@ -110,6 +111,15 @@
         self.nextButton.enabled = YES;
     }
     
+}
+
+- (void) updateInterface {
+    [self navigationButtonEnablerDisabler];
+    [self updateProgressView];
+}
+
+- (void) updateProgressView {
+    self.progressBar.progress = (double)self.questionNumber/self.questionCountTotal;
 }
 
 
