@@ -14,6 +14,8 @@
 		880C522F1BEADC5300C765CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880C522D1BEADC5300C765CA /* LaunchScreen.xib */; };
 		880C523B1BEADC5300C765CA /* Professors_ReviewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */; };
 		880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880C52451BEAE77C00C765CA /* SelectCourseViewController.m */; };
+		88E265921C111D8400D9B1EC /* SingleQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E265911C111D8400D9B1EC /* SingleQuestionView.m */; };
+		88E265941C11203900D9B1EC /* SingleQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E265931C11203900D9B1EC /* SingleQuestionView.xib */; };
 		88FEFE0F1BF792CF00A5B46C /* RateProfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,9 @@
 		880C523A1BEADC5300C765CA /* Professors_ReviewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Professors_ReviewsTests.m; sourceTree = "<group>"; };
 		880C52441BEAE77C00C765CA /* SelectCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCourseViewController.h; sourceTree = "<group>"; };
 		880C52451BEAE77C00C765CA /* SelectCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCourseViewController.m; sourceTree = "<group>"; };
+		88E265901C111D8400D9B1EC /* SingleQuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleQuestionView.h; sourceTree = "<group>"; };
+		88E265911C111D8400D9B1EC /* SingleQuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleQuestionView.m; sourceTree = "<group>"; };
+		88E265931C11203900D9B1EC /* SingleQuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleQuestionView.xib; sourceTree = "<group>"; };
 		88FEFE0D1BF792CF00A5B46C /* RateProfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateProfViewController.h; sourceTree = "<group>"; };
 		88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateProfViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +92,9 @@
 				880C52281BEADC5300C765CA /* Main.storyboard */,
 				88FEFE0D1BF792CF00A5B46C /* RateProfViewController.h */,
 				88FEFE0E1BF792CF00A5B46C /* RateProfViewController.m */,
+				88E265901C111D8400D9B1EC /* SingleQuestionView.h */,
+				88E265911C111D8400D9B1EC /* SingleQuestionView.m */,
+				88E265931C11203900D9B1EC /* SingleQuestionView.xib */,
 				880C52441BEAE77C00C765CA /* SelectCourseViewController.h */,
 				880C52451BEAE77C00C765CA /* SelectCourseViewController.m */,
 				880C521E1BEADC5300C765CA /* Supporting Files */,
@@ -204,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E265941C11203900D9B1EC /* SingleQuestionView.xib in Resources */,
 				880C522A1BEADC5300C765CA /* Main.storyboard in Resources */,
 				880C522F1BEADC5300C765CA /* LaunchScreen.xib in Resources */,
 				880C522C1BEADC5300C765CA /* Images.xcassets in Resources */,
@@ -225,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880C52461BEAE77C00C765CA /* SelectCourseViewController.m in Sources */,
+				88E265921C111D8400D9B1EC /* SingleQuestionView.m in Sources */,
 				88FEFE0F1BF792CF00A5B46C /* RateProfViewController.m in Sources */,
 				880C52241BEADC5300C765CA /* AppDelegate.m in Sources */,
 				880C52211BEADC5300C765CA /* main.m in Sources */,
