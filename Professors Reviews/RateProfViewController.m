@@ -91,12 +91,12 @@
     else {
         self.backButton.enabled =YES;
     }
-    
+//Changing "Next" button to say "Submit" at the end of tray. Changing back to "Next" when not at end of tray
     if ([self atRightBound]) {
-        self.nextButton.enabled = NO;
+        [self.nextButton setTitle:@"Submit" forState:UIControlStateNormal];
     }
     else {
-        self.nextButton.enabled = YES;
+        [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
     }
     
 }

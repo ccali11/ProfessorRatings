@@ -208,95 +208,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-JG-pey">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP6-Fa-poT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP6-Fa-poT" customClass="SingleQuestionView">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-Uh-gC8">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktL-Uh-gC8" customClass="SingleQuestionView">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziv-Z3-kAp">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziv-Z3-kAp" customClass="SingleQuestionView">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZl-BX-H41">
-                                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                <animations/>
-                                                <string key="text">Question 1
-
-
-</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W4i-kL-tgd">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-v5-3m1">
-                                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                                <animations/>
-                                            </slider>
-                                        </subviews>
                                         <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Axd-v5-3m1" firstAttribute="leading" secondItem="Ziv-Z3-kAp" secondAttribute="leading" constant="8" id="0kB-XF-LCc"/>
-                                            <constraint firstItem="Axd-v5-3m1" firstAttribute="top" secondItem="eZl-BX-H41" secondAttribute="bottom" constant="8" symbolic="YES" id="7kf-fg-egc"/>
-                                            <constraint firstAttribute="trailing" secondItem="Axd-v5-3m1" secondAttribute="trailing" constant="8" id="Ng6-vm-8Mh"/>
-                                            <constraint firstItem="W4i-kL-tgd" firstAttribute="leading" secondItem="Ziv-Z3-kAp" secondAttribute="leading" constant="8" id="TyI-ff-1OC"/>
-                                            <constraint firstAttribute="trailing" secondItem="eZl-BX-H41" secondAttribute="trailing" constant="8" id="bl1-eC-fnG"/>
-                                            <constraint firstAttribute="trailing" secondItem="W4i-kL-tgd" secondAttribute="trailing" constant="8" id="cbk-0E-KWi"/>
-                                            <constraint firstAttribute="bottom" secondItem="W4i-kL-tgd" secondAttribute="bottom" constant="20" symbolic="YES" id="hQ6-LC-KGu"/>
-                                            <constraint firstItem="eZl-BX-H41" firstAttribute="top" secondItem="Ziv-Z3-kAp" secondAttribute="top" constant="20" symbolic="YES" id="oOC-ZW-0MH"/>
-                                            <constraint firstItem="eZl-BX-H41" firstAttribute="leading" secondItem="Ziv-Z3-kAp" secondAttribute="leading" constant="8" id="q7l-6t-zLa"/>
-                                            <constraint firstItem="W4i-kL-tgd" firstAttribute="top" secondItem="Axd-v5-3m1" secondAttribute="bottom" constant="8" symbolic="YES" id="zbL-od-T6j"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="eZl-BX-H41"/>
-                                                <exclude reference="W4i-kL-tgd"/>
-                                                <exclude reference="Axd-v5-3m1"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="bl1-eC-fnG"/>
-                                                <exclude reference="oOC-ZW-0MH"/>
-                                                <exclude reference="q7l-6t-zLa"/>
-                                                <exclude reference="0kB-XF-LCc"/>
-                                                <exclude reference="7kf-fg-egc"/>
-                                                <exclude reference="Ng6-vm-8Mh"/>
-                                                <exclude reference="TyI-ff-1OC"/>
-                                                <exclude reference="cbk-0E-KWi"/>
-                                                <exclude reference="hQ6-LC-KGu"/>
-                                                <exclude reference="zbL-od-T6j"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="subviews">
-                                                <include reference="eZl-BX-H41"/>
-                                                <include reference="W4i-kL-tgd"/>
-                                                <include reference="Axd-v5-3m1"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="bl1-eC-fnG"/>
-                                                <include reference="oOC-ZW-0MH"/>
-                                                <include reference="q7l-6t-zLa"/>
-                                                <include reference="0kB-XF-LCc"/>
-                                                <include reference="7kf-fg-egc"/>
-                                                <include reference="Ng6-vm-8Mh"/>
-                                                <include reference="TyI-ff-1OC"/>
-                                                <include reference="cbk-0E-KWi"/>
-                                                <include reference="hQ6-LC-KGu"/>
-                                                <include reference="zbL-od-T6j"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
