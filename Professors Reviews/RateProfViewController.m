@@ -14,7 +14,10 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
+@property (strong, nonatomic) IBOutlet UIButton *submitButton;
+
 @property (weak, nonatomic) IBOutlet UIView *tray;
+
 @property (nonatomic) int questionNumber;
 
 @property (nonatomic) int questionCountTotal;
@@ -93,11 +96,15 @@
     }
 //Changing "Next" button to say "Submit" at the end of tray. Changing back to "Next" when not at end of tray
     if ([self atRightBound]) {
-        [self.nextButton setTitle:@"Submit" forState:UIControlStateNormal];
+        self.nextButton.hidden = YES;
+        self.submitButton.hidden = NO;
     }
+    
     else {
-        [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+        self.nextButton.hidden = NO;
+        self.submitButton.hidden = YES;
     }
+    
     
 }
 
